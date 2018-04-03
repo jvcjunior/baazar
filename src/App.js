@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, Carousel, Divider } from 'antd';
+import { Row, Col, Card, Divider } from 'antd';
 import './App.css';
 
 const { Meta } = Card;
