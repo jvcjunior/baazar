@@ -24,6 +24,25 @@
   font-size: large;
 }
 
+/* For demo */
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.slick-arrow.slick-prev:before {
+  color: black;
+}
+.slick-arrow.slick-next:before {
+  color: black;
+}
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

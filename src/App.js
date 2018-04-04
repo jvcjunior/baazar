@@ -1,168 +1,65 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, Divider } from 'antd';
+// import ModalImages from './Modal';
+import data from './data'
 import './App.css';
 
 const { Meta } = Card;
 
 class App extends Component {
+  // state = {
+  //   modalVisible: false,
+  //   currentItem: {}
+  // }
+  // showModal = (item) => {
+  //   this.setState({
+  //     modalVisible: true,
+  //     currentItem: item
+  //   });
+  // }
+  // handleOk = (e) => {
+  //   console.log('handle ok');
+  //   this.setState({
+  //     modalVisible: false,
+  //   });
+  // }
+  // handleCancel = (e) => {
+  //   console.log('handle cancel');
+  //   this.setState({
+  //     modalVisible: false,
+  //   });
+  // }
   render() {
     return (
       <div className="App" style={{padding: '50px'}}>
-        <Row gutter={16} style={{ marginBottom: '50px'}}>
-          <Col span={6} >
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://i.imgur.com/ocDrKZc.jpg" />}
-            >
-              <Meta
-                title="Mesinha Artesanal"
-                description="R$ 50,00"
-              />
-              <Divider />
-              Descrição: Mesinha branca de 1 metro de altura.
-            </Card>
-          </Col>
-          <Col span={6}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://i.imgur.com/8oAzvd1.jpg" />}
-            >
-              <Meta
-                title="Cadeira altura regulável"
-                description="R$ 80,00 cada"
-              />
-              <Divider />
-              Quantidade: 2 <br/>
-              Descrição: Cadeira vermelha com altura regulável do ETNA.
-            </Card>
-          </Col>
-          <Col span={6} >
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-          <Col span={6}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
+        <Row type="flex" >
+          {data.map(item => (
+            <Col 
+              style={{ marginBottom: '50px'}} 
+              key={item.id} md={{ span: 8, offset: 1 }} 
+              lg={{ span: 5, offset: 1 }} >
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                // onClick={() => this.showModal(item)}
+                cover={<img alt="example" src={item.imgCapa} />}
+              >
+                <Meta
+                  title={item.titulo}
+                  description={item.subtitulo}
+                />
+                <Divider />
+                {item.descricao}
+              </Card>
+            </Col>
+          ))}
         </Row>
-        <Row gutter={16} style={{ marginBottom: '50px'}}>
-          <Col span={6} >
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-          <Col span={6}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-          <Col span={6} >
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-          <Col span={6}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-        </Row>
-        <Row gutter={16} style={{ marginBottom: '50px'}}>
-          <Col span={6} >
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-          <Col span={6}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-          <Col span={6} >
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-          <Col span={6}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-              <Meta
-                title="Europe Street beat"
-                description="www.instagram.com"
-              />
-            </Card>
-          </Col>
-        </Row>
+        {/* <ModalImages
+          currentItem={this.state.currentItem}
+          modalVisible={this.state.modalVisible}
+          handleCancel={this.handleCancel}
+          handleOk={this.handleOk}
+        /> */}
       </div>
     );
   }
