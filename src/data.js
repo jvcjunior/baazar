@@ -49,4 +49,12 @@ export default [
     descricao: <p>Descrição: Fogão Brastemp Clean</p>,
     imgsModal: ['https://i.imgur.com/dX5Kqjs.jpg']
   },
+  {
+    id: 7,
+    imgCapa: 'https://i.imgur.com/yqrW3oo.jpg',
+    titulo: 'Impressora HP',
+    subtitulo: 'R$ 350,00',
+    descricao: <p>Descrição: HP Officejet Pro 8100</p>,
+    imgsModal: ['https://i.imgur.com/yqrW3oo.jpg']
+  },
 ];
