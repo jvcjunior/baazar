@@ -50,6 +50,8 @@ class App extends Component {
                 />
                 <Divider />
                 {item.descricao}
+                <Divider />
+                <b style={{ color: 'red' }}>Reserve agora</b>: <br/>99975-4347(Whatsapp)
               </Card>
             </Col>
           ))}

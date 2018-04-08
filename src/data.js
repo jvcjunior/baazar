@@ -57,4 +57,28 @@ export default [
     descricao: <p>Descrição: HP Officejet Pro 8100</p>,
     imgsModal: ['https://i.imgur.com/yqrW3oo.jpg']
   },
+  {
+    id: 8,
+    imgCapa: 'https://i.imgur.com/gykwcOj.jpg',
+    titulo: 'Sofá',
+    subtitulo: 'R$ -- ',
+    descricao: <p>Descrição: Sofá</p>,
+    imgsModal: ['https://i.imgur.com/gykwcOj.jpg']
+  },
+  {
+    id: 9,
+    imgCapa: 'https://i.imgur.com/eulaw0t.jpg',
+    titulo: 'Movelzinho Projetado',
+    subtitulo: 'R$ --',
+    descricao: <p>Descrição: Móvel projetado</p>,
+    imgsModal: ['https://i.imgur.com/eulaw0t.jpg']
+  },
+  {
+    id: 10,
+    imgCapa: 'https://i.imgur.com/GBJ839F.jpg',
+    titulo: 'Máquina de Lavar BRASTEMP',
+    subtitulo: 'R$ 350,00',
+    descricao: <p>Descrição: Máquina de Lavar BRASTEMP</p>,
+    imgsModal: ['https://i.imgur.com/GBJ839F.jpg']
+  },
 ];
