@@ -97,4 +97,36 @@ export default [
     descricao: <p>Descrição: Mesa/Base de madeira projetada para cozinha</p>,
     imgsModal: ['https://i.imgur.com/3jwi3uk.jpg']
   },
+  {
+    id: 13,
+    imgCapa: 'https://i.imgur.com/hewMp9g.jpg',
+    titulo: 'Mesa de jantar 4 lugares com Cadeiras',
+    subtitulo: 'R$ --',
+    descricao: <p>Descrição: Mesa de Jantar 4 Lugares com Cadeiras</p>,
+    imgsModal: ['https://i.imgur.com/hewMp9g.jpg']
+  },
+  {
+    id: 14,
+    imgCapa: 'https://i.imgur.com/oSQh2xs.jpg',
+    titulo: 'Móvel marrom para sala ou TV',
+    subtitulo: 'R$ 150,00',
+    descricao: <p>Descrição: Móvel marrom para sala ou TV.</p>,
+    imgsModal: ['https://i.imgur.com/oSQh2xs.jpg']
+  },
+  {
+    id: 15,
+    imgCapa: 'https://i.imgur.com/5B1Jg6Y.jpg',
+    titulo: 'TV LG Plasma 50 polegadas',
+    subtitulo: 'R$ --',
+    descricao: <p>Descrição: Excelente TV LG Plasma 50 Polegadas</p>,
+    imgsModal: ['https://i.imgur.com/5B1Jg6Y.jpg']
+  },
+  {
+    id: 16,
+    imgCapa: 'https://i.imgur.com/6jVgo7w.jpg',
+    titulo: 'Ar condicionado Electrolux',
+    subtitulo: 'R$ --',
+    descricao: <p>Descrição: Ar condicionado Electrolux</p>,
+    imgsModal: ['https://i.imgur.com/6jVgo7w.jpg']
+  },
 ];
