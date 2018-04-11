@@ -61,7 +61,7 @@ export default [
     id: 8,
     imgCapa: 'https://i.imgur.com/gykwcOj.jpg',
     titulo: 'Sofá',
-    subtitulo: 'R$ -- ',
+    subtitulo: 'R$ 400,00 ',
     descricao: <p>Descrição: Sofá</p>,
     imgsModal: ['https://i.imgur.com/gykwcOj.jpg']
   },
@@ -69,7 +69,7 @@ export default [
     id: 9,
     imgCapa: 'https://i.imgur.com/eulaw0t.jpg',
     titulo: 'Movelzinho Projetado',
-    subtitulo: 'R$ --',
+    subtitulo: 'R$ 150,00',
     descricao: <p>Descrição: Móvel projetado</p>,
     imgsModal: ['https://i.imgur.com/eulaw0t.jpg']
   },
@@ -77,8 +77,24 @@ export default [
     id: 10,
     imgCapa: 'https://i.imgur.com/GBJ839F.jpg',
     titulo: 'Máquina de Lavar BRASTEMP',
-    subtitulo: 'R$ 350,00',
+    subtitulo: 'R$ 800,00',
     descricao: <p>Descrição: Máquina de Lavar BRASTEMP</p>,
     imgsModal: ['https://i.imgur.com/GBJ839F.jpg']
+  },
+  {
+    id: 11,
+    imgCapa: 'https://i.imgur.com/LARA1Br.jpg',
+    titulo: 'Aparelho de Jantar Casa Ambiente NUNCA USADO',
+    subtitulo: 'R$ 100,00',
+    descricao: <p>Descrição: Aparelho de Jantar Casa Ambiente NUNCA USADO</p>,
+    imgsModal: ['https://i.imgur.com/LARA1Br.jpg']
+  },
+  {
+    id: 12,
+    imgCapa: 'https://i.imgur.com/3jwi3uk.jpg',
+    titulo: 'Mesa/Base projetada para cozinha',
+    subtitulo: 'R$ 100,00',
+    descricao: <p>Descrição: Mesa/Base de madeira projetada para cozinha</p>,
+    imgsModal: ['https://i.imgur.com/3jwi3uk.jpg']
   },
 ];
