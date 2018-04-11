@@ -1,34 +1,34 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, Divider } from 'antd';
-// import ModalImages from './Modal';
+import ModalImages from './Modal';
 import data from './data'
 import './App.css';
 
 const { Meta } = Card;
 
 class App extends Component {
-  // state = {
-  //   modalVisible: false,
-  //   currentItem: {}
-  // }
-  // showModal = (item) => {
-  //   this.setState({
-  //     modalVisible: true,
-  //     currentItem: item
-  //   });
-  // }
-  // handleOk = (e) => {
-  //   console.log('handle ok');
-  //   this.setState({
-  //     modalVisible: false,
-  //   });
-  // }
-  // handleCancel = (e) => {
-  //   console.log('handle cancel');
-  //   this.setState({
-  //     modalVisible: false,
-  //   });
-  // }
+  state = {
+    modalVisible: false,
+    currentItem: {}
+  }
+  showModal = (item) => {
+    this.setState({
+      modalVisible: true,
+      currentItem: item
+    });
+  }
+  handleOk = (e) => {
+    console.log('handle ok');
+    this.setState({
+      modalVisible: false,
+    });
+  }
+  handleCancel = (e) => {
+    console.log('handle cancel');
+    this.setState({
+      modalVisible: false,
+    });
+  }
   render() {
     return (
       <div className="App" style={{padding: '50px'}}>
@@ -41,7 +41,7 @@ class App extends Component {
               <Card
                 hoverable
                 style={{ width: 240 }}
-                // onClick={() => this.showModal(item)}
+                onClick={() => this.showModal(item)}
                 cover={<img alt="example" src={item.imgCapa} />}
               >
                 <Meta
@@ -56,12 +56,12 @@ class App extends Component {
             </Col>
           ))}
         </Row>
-        {/* <ModalImages
+        <ModalImages
           currentItem={this.state.currentItem}
           modalVisible={this.state.modalVisible}
           handleCancel={this.handleCancel}
           handleOk={this.handleOk}
-        /> */}
+        />
       </div>
     );
   }

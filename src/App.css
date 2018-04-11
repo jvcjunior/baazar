@@ -43,6 +43,10 @@
   color: #fff;
 }
 
+.ant-card-meta-title{
+  white-space: normal;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
